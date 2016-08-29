@@ -1,0 +1,17 @@
+{
+  type: 'object'
+  title: 'Search Users'
+  'x-group-name': 'Users'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        q:
+          title: "Query"
+          type: "string"
+        count:
+          title: "Number of Users to Return"
+          type: "integer"
+          default: 10
+}

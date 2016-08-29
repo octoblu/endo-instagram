@@ -1,0 +1,6 @@
+{
+  angular: [
+    "data.q"
+    "data.count"
+  ]
+}

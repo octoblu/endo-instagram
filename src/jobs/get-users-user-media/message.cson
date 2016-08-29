@@ -1,0 +1,24 @@
+{
+  type: 'object'
+  title: 'Get Users Recent Media'
+  'x-group-name': 'Users'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        user_id:
+          title: "User ID"
+          type: "string"
+          required: true
+        count:
+          title: "Count"
+          type: "integer"
+          default: 0
+        min:
+          title: "MIN ID"
+          type: "string"
+        max:
+          title: "MAX ID"
+          type: "string"
+}

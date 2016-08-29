@@ -11,6 +11,7 @@ class InstagramStrategy extends PassportInstagram
       clientID:     process.env.ENDO_INSTAGRAM_INSTAGRAM_CLIENT_ID
       clientSecret: process.env.ENDO_INSTAGRAM_INSTAGRAM_CLIENT_SECRET
       callbackURL:  process.env.ENDO_INSTAGRAM_INSTAGRAM_CALLBACK_URL
+      scope: ["public_content", "follower_list", "comments", "relationships", "likes"]
     }
 
     super options, @onAuthorization

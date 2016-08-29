@@ -1,0 +1,6 @@
+{
+  angular: [
+    "data.count"
+    "data.max_like_id"
+  ]
+}

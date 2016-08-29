@@ -1,0 +1,9 @@
+{
+  type: 'object'
+  title: 'Get Users I Follow'
+  'x-group-name': 'Relationships'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+}

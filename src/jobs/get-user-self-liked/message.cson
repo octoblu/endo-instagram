@@ -1,0 +1,17 @@
+{
+  type: 'object'
+  title: 'Get My Likes'
+  'x-group-name': 'Users'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        count:
+          title: "Count"
+          type: "integer"
+          default: 0
+        max_like_id:
+          title: "MAX LIKE ID"
+          type: "string"
+}

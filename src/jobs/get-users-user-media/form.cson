@@ -1,0 +1,8 @@
+{
+  angular: [
+    "data.user_id"
+    "data.count"
+    "data.min"
+    "data.max"
+  ]
+}

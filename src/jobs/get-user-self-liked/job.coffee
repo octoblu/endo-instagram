@@ -2,7 +2,7 @@ http   = require 'http'
 _      = require 'lodash'
 Instagram = require('node-instagram').default
 
-class GetUser
+class GetUsersSelfMedia
   constructor: ({@encrypted}) ->
     @instagram = new Instagram {
       clientId: process.env.ENDO_INSTAGRAM_INSTAGRAM_CLIENT_ID
@@ -10,11 +10,10 @@ class GetUser
     }
 
   do: ({data}, callback) =>
-    return callback @_userError(422, 'data.user_id is required') unless data.user_id?
 
-    endpoint = 'users/' + data.user_id
+    { count, max_like_id } = data
 
-    @instagram.get endpoint, (error, results) =>
+    @instagram.get 'users/self/media/liked', { count: count, MAX_LIKE_ID: max_like_id }, (error, results) =>
       return callback error if error?
       return callback null, {
         metadata: results.meta
@@ -26,4 +25,4 @@ class GetUser
     error.code = code
     return error
 
-module.exports = GetUser
+module.exports = GetUsersSelfMedia
