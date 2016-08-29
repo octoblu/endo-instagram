@@ -1,0 +1,24 @@
+{
+  type: 'object'
+  title: 'Modify Relationship'
+  'x-group-name': 'Relationships'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        user_id:
+          title: "User ID"
+          type: "string"
+          required: true
+        action:
+          title: "Action"
+          type: "string"
+          enum: [
+            "follow"
+            "unfollow"
+            "approve"
+            "ignore"
+          ]
+          required: true
+}

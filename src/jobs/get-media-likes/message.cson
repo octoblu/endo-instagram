@@ -1,0 +1,14 @@
+{
+  type: 'object'
+  title: 'Get Media Likes'
+  'x-group-name': 'Likes'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        media_id:
+          title: "Media ID"
+          type: "string"
+          required: true
+}

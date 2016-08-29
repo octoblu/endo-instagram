@@ -1,0 +1,18 @@
+{
+  type: 'object'
+  title: 'Delete Media Comment'
+  'x-group-name': 'Comments'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        media_id:
+          title: "Media ID"
+          type: "string"
+          required: true
+        comment_id:
+          title: "Comment ID"
+          type: "string"
+          required: true
+}

@@ -1,0 +1,23 @@
+{
+  type: 'object'
+  title: 'Search Media'
+  'x-group-name': 'Media'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        lat:
+          title: "Latitude"
+          type: "number"
+          required: true
+        lng:
+          title: "Longitude"
+          type: "number"
+          required: true
+        distance:
+          title: "Distance (m)"
+          type: "integer"
+          default: 1000
+
+}
