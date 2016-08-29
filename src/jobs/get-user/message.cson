@@ -1,0 +1,14 @@
+{
+  type: 'object'
+  title: 'Get User by ID'
+  'x-group-name': 'Users'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        user_id:
+          title: "User ID"
+          type: "string"
+          required: true
+}

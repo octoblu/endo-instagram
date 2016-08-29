@@ -1,0 +1,7 @@
+{
+  angular: [
+    "data.count"
+    "data.min"
+    "data.max"
+  ]
+}

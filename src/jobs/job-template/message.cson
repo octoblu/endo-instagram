@@ -1,0 +1,9 @@
+{
+  type: 'object'
+  title: 'Job'
+  'x-group-name': 'Users'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+}

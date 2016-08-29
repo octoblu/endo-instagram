@@ -10,12 +10,13 @@ class InstagramStrategy extends PassportInstagram
     options = {
       clientID:     process.env.ENDO_INSTAGRAM_INSTAGRAM_CLIENT_ID
       clientSecret: process.env.ENDO_INSTAGRAM_INSTAGRAM_CLIENT_SECRET
-      callbackUrl:  process.env.ENDO_INSTAGRAM_INSTAGRAM_CALLBACK_URL
+      callbackURL:  process.env.ENDO_INSTAGRAM_INSTAGRAM_CALLBACK_URL
     }
 
     super options, @onAuthorization
 
   onAuthorization: (accessToken, refreshToken, profile, callback) =>
+
     callback null, {
       id: profile.id
       username: profile.username
