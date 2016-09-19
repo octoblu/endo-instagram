@@ -1,10 +1,13 @@
 # endo-instagram
 
+[![Build Status](https://travis-ci.org/octoblu/endo-instagram.svg?branch=master)](https://travis-ci.org/octoblu/endo-instagram)
+[![Test Coverage](https://codecov.io/gh/octoblu/endo-instagram/branch/master/graph/badge.svg)](https://codecov.io/gh/octoblu/endo-instagram)
 [![Dependency status](http://img.shields.io/david/octoblu/endo-instagram.svg?style=flat)](https://david-dm.org/octoblu/endo-instagram)
 [![devDependency Status](http://img.shields.io/david/dev/octoblu/endo-instagram.svg?style=flat)](https://david-dm.org/octoblu/endo-instagram#info=devDependencies)
-[![Build Status](http://img.shields.io/travis/octoblu/endo-instagram.svg?style=flat&branch=master)](https://travis-ci.org/octoblu/endo-instagram)
+[![Slack Status](http://community-slack.octoblu.com/badge.svg)](http://community-slack.octoblu.com)
 
 [![NPM](https://nodei.co/npm/endo-instagram.svg?style=flat)](https://npmjs.org/package/endo-instagram)
+
 
 ## Installing
 
